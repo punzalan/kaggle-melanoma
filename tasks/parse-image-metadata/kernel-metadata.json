@@ -1,0 +1,13 @@
+{
+  "id": "punzalan/melanoma-parse-image-metadata",
+  "title": "melanoma-parse-image-metadata",
+  "code_file": "parse-image-metadata.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": ["punzalan/melanoma-foo"],
+  "competition_sources": ["siim-isic-melanoma-classification"],
+  "kernel_sources": []
+}

@@ -11,5 +11,3 @@ sleep 5s
 
 kaggle kernels push -p /app/tasks/$TASK_NAME
 python3 poll.py --task_name melanoma-$TASK_NAME
-kaggle kernels output punzalan/melanoma-$TASK_NAME
-cat melanoma-$TASK_NAME.log
