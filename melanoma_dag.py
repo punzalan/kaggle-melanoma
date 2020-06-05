@@ -36,11 +36,19 @@ DEFAULT_DOCKER_ARGS = {
 LOAD_LIBRARIES = DummyOperator(task_id="load_libraries", dag=DAG,)
 
 
-CREATE_TRAINING_DATA_SAMPLE = DockerOperator(
+CREATE_PROTOTYPING_DATA_SAMPLE = DockerOperator(
     task_id="create_prototyping_sample",
     environment={"TASK_NAME": "create-prototyping-sample"},
     **DEFAULT_DOCKER_ARGS,
 )
 
 
-CREATE_TRAINING_DATA_SAMPLE << LOAD_LIBRARIES
+PARSE_IMAGE_METADATA = DockerOperator(
+    task_id="parse_image_metadata",
+    environment={"TASK_NAME": "parse-image-metadata"},
+    **DEFAULT_DOCKER_ARGS,
+)
+
+
+CREATE_PROTOTYPING_DATA_SAMPLE << LOAD_LIBRARIES
+PARSE_IMAGE_METADATA << LOAD_LIBRARIES

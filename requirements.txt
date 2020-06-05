@@ -1,4 +1,7 @@
 apache-airflow
 black
 docker
+jupyter
+pyarrow
+pydicom
 pylint

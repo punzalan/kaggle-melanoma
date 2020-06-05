@@ -23,3 +23,6 @@ pylint:
 
 trigger:
 	/venv/kaggle-melanoma/bin/airflow trigger_dag melanoma
+
+nb:
+	/venv/kaggle-melanoma/bin/jupyter notebook
