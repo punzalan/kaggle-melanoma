@@ -1,0 +1,13 @@
+{
+  "id": "punzalan/melanoma-create-training-data-sample",
+  "title": "melanoma-create-training-data-sample",
+  "code_file": "create-training-data-sample.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": ["punzalan/melanoma-foo"],
+  "competition_sources": ["siim-isic-melanoma-classification"],
+  "kernel_sources": []
+}
