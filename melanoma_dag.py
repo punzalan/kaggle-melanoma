@@ -37,8 +37,8 @@ LOAD_LIBRARIES = DummyOperator(task_id="load_libraries", dag=DAG,)
 
 
 CREATE_TRAINING_DATA_SAMPLE = DockerOperator(
-    task_id="create_training_data_sample",
-    environment={"TASK_NAME": "create-training-data-sample"},
+    task_id="create_prototyping_sample",
+    environment={"TASK_NAME": "create-prototyping-sample"},
     **DEFAULT_DOCKER_ARGS,
 )
 
