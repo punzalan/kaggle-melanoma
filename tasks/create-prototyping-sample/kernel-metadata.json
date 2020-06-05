@@ -1,7 +1,7 @@
 {
-  "id": "punzalan/melanoma-create-training-data-sample",
-  "title": "melanoma-create-training-data-sample",
-  "code_file": "create-training-data-sample.py",
+  "id": "punzalan/melanoma-create-prototyping-sample",
+  "title": "melanoma-create-prototyping-sample",
+  "code_file": "create-prototyping-sample.py",
   "language": "python",
   "kernel_type": "script",
   "is_private": "true",
